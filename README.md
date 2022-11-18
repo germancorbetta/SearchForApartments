@@ -23,9 +23,8 @@ $ pip3 install -r requirements.txt
 - SitePrefix: in case the href link points to a url without domain, you may add the domain as a prefix
 
 Example:
-Web: "https://www.apartments.com/new-york-ny/low-income/"
 
-Analyzing the response, we find the following link:
+Analyzing the response from www.apartments.com, we find the following link:
 ```
 <header class="placard-header has-logo">
 	<div class="property-information">
@@ -39,14 +38,14 @@ Analyzing the response, we find the following link:
 </header>
 ```
 
-So...
+So the configuration.yml file should contain:
 
+```
+Web: "https://www.apartments.com/new-york-ny/low-income/"
 Element: "div"
-
 Class: "property-information"
-
 SitePrefix: ""
-
+```
 
 # Usage
 ```
