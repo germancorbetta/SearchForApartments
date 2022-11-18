@@ -6,6 +6,7 @@ pip3 install -r requirements.txt
 
 # Usage
 cd /folder_location
+
 python3 main.py
 
 ## Disclaimer
