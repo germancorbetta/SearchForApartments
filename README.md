@@ -1,5 +1,5 @@
 # SearchForApartments
-This script assist people looking for new apartments by scrapping pages and getting links from the code
+This script assist people looking for new apartments by scrapping pages and getting links from the code, then if the link is new, it just send the link to one or many Telegram chats.
 
 
 # Requirements
