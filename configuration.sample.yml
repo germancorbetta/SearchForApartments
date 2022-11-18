@@ -1,0 +1,23 @@
+telegram:
+ apiToken: "the_token"
+ chats:
+ - chat_id_one
+ - chat_id_two
+database:
+ name: "database_file_name"
+pages:
+ SiteOne: 
+  web: "http://asd1"
+  element: "h1"
+  class: "sarasa"
+  sitePrefix: "http://sarasa.com"
+ SiteTwo:
+  web: "http://asd2"
+  element: "h2"
+  class: "sarasa"
+  sitePrefix: ""
+ SiteThree:
+  web: "http://asd3"
+  element: "div"
+  class: "sarasa"
+  sitePrefix: "https://sarasa.com/site"
