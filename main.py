@@ -21,22 +21,21 @@ for site in sites:
     # Extract links from the response
     if (request.status_code != 200):
         print(siteName + ": HTTP request error")
+
     elif (request.status_code == 200):
         page_content = BeautifulSoup(request.text, 'lxml')
         properties = page_content.find_all(siteElement, class_=siteClass)
         for prop in properties:
             for link in prop.findAll('a'):
                 href = link.get('href')
-                hasHash = href.find('#',1,len(href))
-                if hasHash == -1:
+                hashLocation = href.find('#',1,len(href))
+                if hashLocation == -1:
                     links.append(sitePrefix + href)
                 else:
-                    unClearLink = href
-                    links.append(sitePrefix + unClearLink[0:unClearLink.find('#',1,len(unClearLink))])
+                    links.append(sitePrefix + href[0:hashLocation])
 
         if(len(links) == 0):
             print(siteName + ": No links in the response")
-
 
     # For each link, verify if it exists in the database, otherwise send the notification and add it in the DB
     for link in links:
