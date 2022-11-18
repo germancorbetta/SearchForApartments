@@ -24,6 +24,7 @@ Example:
 Web: "https://www.apartments.com/new-york-ny/low-income/"
 
 Analyzing the response, we find the following link:
+```
 <header class="placard-header has-logo">
 	<div class="property-information">
 		<a class="property-link" href="https://www.apartments.com/riverton-square-new-york-ny/yd8wsxt/" aria-label="Riverton Square, New York, NY">
@@ -34,6 +35,7 @@ Analyzing the response, we find the following link:
 		</a>
 	</div>
 </header>
+```
 
 So...
 Element: "div"
