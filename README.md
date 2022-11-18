@@ -1,6 +1,7 @@
 # SearchForApartments
 This script assist people looking for new apartments by scrapping pages and getting links from the code
 
+
 # Requirements
 
 1) Install the required Python libraries
@@ -38,14 +39,19 @@ Analyzing the response, we find the following link:
 ```
 
 So...
+
 Element: "div"
+
 Class: "property-information"
+
 SitePrefix: ""
+
 
 # Usage
 cd /folder_location
 
 python3 main.py
+
 
 ## Disclaimer
 This example is provided as a reference for your own usage and is not to be considered my own product.
