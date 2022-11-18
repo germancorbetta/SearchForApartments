@@ -5,8 +5,9 @@ This script assist people looking for new apartments by scrapping pages and gett
 # Requirements
 
 1) Install the required Python libraries
+```
 $ pip3 install -r requirements.txt
-
+```
 2) Create a configuration.yml in the project root folder based on the configuration.sample.yml file
 
 3) Create a Telegram BOT and set the Token in the configuration.yml file
@@ -48,10 +49,10 @@ SitePrefix: ""
 
 
 # Usage
-cd /folder_location
-
-python3 main.py
-
+```
+$ cd /folder_location
+$ python3 main.py
+```
 
 ## Disclaimer
 This example is provided as a reference for your own usage and is not to be considered my own product.
