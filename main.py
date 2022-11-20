@@ -41,7 +41,7 @@ for site in sites:
     for link in links:
         if (not functions.LinkExists(link)):
             print("Sending: " + link)
-            functions.sendToTelegram("Nuevo depto en " + siteName + ": " + link)
+            functions.sendToTelegram("New appartment at " + siteName + ": " + link)
             functions.InsertLink(link)
 
     print(siteName + " finished")
